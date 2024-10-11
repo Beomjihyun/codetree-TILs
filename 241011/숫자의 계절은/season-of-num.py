@@ -9,7 +9,7 @@ m = int(input())
 # else:
 #     print("Winter")
 
-if m >= 12 and m <= 2:
+if m >= 12 or m <= 2:
     print("Winter")
 elif m <= 5:
     print("Spring")
