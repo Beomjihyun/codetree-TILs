@@ -16,4 +16,4 @@ elif m <= 5:
 elif m <= 8:
     print("Summer")
 else:
-    print("Winter")
+    print("Fall")
