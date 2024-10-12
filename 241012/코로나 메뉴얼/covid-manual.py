@@ -12,9 +12,9 @@ if c1 == 'Y' and t1 >= 37:
     else:
         print('N')
 elif c2 == 'Y' and t2 >= 37:
-    if c3 == 'Y' and t3 >= 37:
+    if c3 == 'Y' and t3 >= 37: # 윗줄과 and로 합쳐 사용가능 => elif가 아닌 else
         print('E')
     else:
         print('N')
 else:
-    print('N')
+    print('N') # 필요 없는 코드
