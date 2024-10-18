@@ -1,15 +1,37 @@
-arr = input().split()
+# arr = input().split()
 
+# a = int(arr[0])
+# b = int(arr[1])
+
+
+# for i in range(21):
+#     m = a // b
+#     n = a % b
+#     a = n * 10
+
+#     print(m, end = "")
+
+#     if i == 0:
+#         print(".", end="")
+
+
+#변수 선언 및 입력
+inp = input()
+arr = inp.split()
 a = int(arr[0])
 b = int(arr[1])
 
+# 정수 부분을 먼저 출력합니다.
+print(f"{a//b}.", end="")
 
-for i in range(21):
-    m = a // b
-    n = a % b
-    a = n * 10
+# a를 b로 나눈 나머지를 시작으로
+# 소수점 자리를 하나씩 계산합니다.
+a %= b
+for _ in range(20):
+    # 나머지에 10 곱한 값을 기준으로
+    # b로 나누었을 떄의 몫을 구해줍니다.
+    a *= 10
+    print(a // b, end="")
 
-    print(m, end = "")
-
-    if i == 0:
-        print(".", end="")
+    # a를 b로 나눈 나머지를 게속 갱신해줍니다.
+    a %= b
